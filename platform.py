@@ -26,8 +26,6 @@ class P132Platform(PlatformBase):
         if "tools" not in debug:
             debug["tools"] = {}
 
-        # Configure OpenOCD debugging.
-        # Only via ST-Link for now
         for link in ("stlink",):
             if link == "stlink":
                 server_args = ["-s", "$PACKAGE_DIR/scripts"]
