@@ -5,16 +5,16 @@
     "f_cpu": "16000000L",
     "cpu": "stm8",
     "mcu": "STM8L052C6t6",
-    "variant": "stm8sdisco"
+    "variant": "stm8l052c6"
   },
   "debug": {
     "svd_path": "STM8L052C6.svd",
     "openocd_target": "stm8l",
     "default_tools": [
-      "stlink"
+      "stlinkv2"
     ],
     "onboard_tools": [
-      "stlink"
+      "stlinkv2"
     ]
   },
   "frameworks": [
@@ -24,14 +24,14 @@
   "upload": {
     "maximum_ram_size": 2048,
     "maximum_size": 32768,
-    "protocol": "stlink",
+    "protocol": "stlinkv2",
     "protocols": [
       "serial",
       "stlinkv21",
       "stlinkv2"
     ]
   },
-  "name": "ST STM8S-DISCOVERY",
-  "url": "https://www.st.com/en/evaluation-tools/stm8s-discovery.html",
-  "vendor": "ST"
+  "name": "STM8L052C6",
+  "url": "https://www.OS-Q.com/",
+  "vendor": "OS-Q"
 }

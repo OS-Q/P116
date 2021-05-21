@@ -52,9 +52,6 @@ env.Append(
     ]
 )
 
-# Fixes possible issue with "ASlink-Warning-No definition of area SSEG" error.
-# This message means that main.c is not pulled in by the linker because there was no
-# reference to main() anywhere. Details: https://tenbaht.github.io/sduino/usage/faq/
 inject_dummy_reference_to_main()
 
 # By default PlatformIO generates "main.cpp" for the Arduino framework.
